@@ -7,6 +7,7 @@ import { ToastProvider } from "./components/ui/ToastContext";
 import NetworkStatusNotifier from "./components/ui/NetworkStatusNotifier";
 import ThemeToggle from "./components/ThemeToggle";
 import BackgroundImage from "./components/BackgroundImage";
+import { CreateButton } from "./components/create/CreateButton";
 
 const HeroSection = lazy(() => import("./components/HeroSection"));
 const Home = lazy(() => import("./components/Home"));
@@ -23,6 +24,7 @@ function App() {
               <HeroSection />
               <Home />
               <CompareButton />
+              <CreateButton/>
               <ThemeToggle />
               <FavoriteModalButton />
             </main>
